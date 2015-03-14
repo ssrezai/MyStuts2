@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="93711944">
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="0c25e0bb-4fd1-45fc-97cb-1322bc909b36">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/loan_database?characterEncoding=UTF-8</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99df9edf9f</user-password>
+      <libraries>
+        <library>
+          <url>file://C:\Users\DOTIN SCHOOL 3\.m2\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="customer.business.model.Customer" table="customer">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name"/>
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name"/>
+        </property>
+        <property name="age">
+            <column name="age"/>
+        </property>
+        <property name="email" type="string">
+            <column name="mail"/>
+        </property>
+    </class>
+</hibernate-mapping>
