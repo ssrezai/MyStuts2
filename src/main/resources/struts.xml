@@ -12,7 +12,7 @@
 
     <package name="default" extends="struts-default" namespace="/">
         <action name="addNewCustomer" class="customer.business.model.actions.CustomerAction" method="addCustomer">
-            <result name="success">jsp-pages/successful.jsp</result>
+            <result name="success" >jsp-pages/successful.jsp</result>
             <result name="input">index.jsp</result>
         </action>
 

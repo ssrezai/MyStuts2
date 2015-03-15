@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
-<body>
-<h2>Hello World!</h2>
+<body STYLE="margin-left: auto;margin-right: auto">
+<h2>Add New Customer</h2>
 <s:form action="addNewCustomer">
     <s:textfield name="firstName" label="first name"/>
     <s:textfield name="lastName" label="last name"/>
@@ -9,6 +9,7 @@
     <s:textfield name="email" label="email"/>
     <s:submit value="addNewCustomer"/>
 </s:form>
+
 
 <s:if test="customerList.size() > 0">
     <table border="1px" cellpadding="8px">

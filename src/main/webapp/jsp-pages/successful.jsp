@@ -12,9 +12,28 @@
     <title></title>
 </head>
 <body>
-<p>congratulation! add new customer</p>
-<s:property value="firstName"/>
-<s:property value="lastName"/>
+<div>
+    <%@ page import="java.util.ResourceBundle" %>
+    <% ResourceBundle resource = ResourceBundle.getBundle("message");
 
-</body>
-</html>
+        String congratulation = resource.getString("congratulation");
+        String error = resource.getString("message.error"); %>
+    <%--<%=congratulation %>--%>
+    <%--<%=error%>--%>
+</div>
+<p>
+    <%=congratulation %>
+<br>
+    add new customer and update your data base :)<br>
+    </p>
+    <s:property value="firstName"/>
+    <s:property value="lastName"/>
+    <s:if test="hasActionMessages()">
+        <s:actionmessage/>
+        <script>
+            var c = <s:actionmessage/>
+                    alert(<s:actionmessage/>);
+        </script>
+    </s:if>
+    </body>
+    </html>
